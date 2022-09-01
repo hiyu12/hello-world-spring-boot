@@ -18,7 +18,7 @@ pipeline{
         }
         stage('DockerDeploy'){
             steps{
-                sh 'docker build -t akash/hello:latest .'
+                sh 'docker build -t thetips4you/springboot:latest .'
             }
         }
     }
