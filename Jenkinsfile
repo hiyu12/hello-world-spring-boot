@@ -16,5 +16,10 @@ pipeline{
                 sh 'mvn package'
             }
         }
+        stage('DockerDeploy'){
+            steps{
+                sh 'docker build -t akash/hello:latest .'
+            }
+        }
     }
 }
