@@ -2,7 +2,7 @@ pipeline{
     agent any
     tools{
         maven 'maven'
-        docker 'docker-1.2'
+        Docker 'docker-1.2'
     }
     stages{
         stage('Git Clone'){
