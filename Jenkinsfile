@@ -16,5 +16,8 @@ pipeline{
                 sh 'mvn package'
             }
         }
+        stage('Image'){
+            steps{
+                sh 'docker build -t akash5791/hello-world-spring-boot .'
     }
 }
